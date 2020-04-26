@@ -1,0 +1,22 @@
+{
+  "name": "Final-Project-master",
+  "version": "1.0.0",
+  "description": "## How to Play ```startGame(\"1\", \"0x1700000000000000000000000000000000000000000000000000000000000000\") // Player 1 Starts ```",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ganache-cli": "^6.9.1",
+    "solc": "^0.6.6",
+    "web3": "^1.2.7",
+    "browser-sync": "^2.26.3"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
