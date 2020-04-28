@@ -11,10 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@drizzle/store": "^1.5.1",
+    "browser-sync": "^2.26.3",
     "ganache-cli": "^6.9.1",
     "solc": "^0.6.6",
-    "web3": "^1.2.7",
-    "browser-sync": "^2.26.3"
+    "web3": "^1.2.7"
   },
   "devDependencies": {
     "lite-server": "^2.5.4"

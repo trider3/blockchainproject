@@ -3,7 +3,7 @@
     <title>Take or Share</title>
     <style>
         body {
-            background-color: black;
+            background-color: white;
         }
         #toolBar {
             text-align: right;
@@ -13,9 +13,10 @@
         #menu {
             padding-left: 10px;
             text-decoration: none;
-            background-color: black;
-            color: white;
-            border: none;
+            background-color: white;
+            border-style: outset;
+            border-color: rgba(0, 0, 0, 0.233);
+            color: red;
             font-size: 20px;
             cursor: pointer;
         }
@@ -28,7 +29,8 @@
         }
         #btn {
             background-color: white;
-            border: none;
+            border-style: outset;
+            border-color: rgba(0, 0, 0, 0.233);
             color: red;
             padding: 15px 32px;
             text-align: center;
@@ -51,9 +53,11 @@
             <button id="menu" onclick=window.open("about.html","_self") title="Information about game theory">ABOUT</button>
         </div>
         <div id="main">
-              <center>height="175px" width="400px">
+              <center height="175px" width="400px">
               <h2>Your opponent chose to {choice}. Your winnings are {ETH transfered}</h2>
-              <input type="button" id="btn" value="Play Again" onclick=window.open("index.html","_self")>
+              <button type="button" id ="btn"> Reveal </button>
+              <button type="button" id ="btn"> Claim your Rewards </button>
+              <button type="button" id ="btn"onclick=window.open("index.html","_self")> Play Again </button>
               </center>
       </div>
     </div>
@@ -65,6 +69,9 @@
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
+    <script>
+
+    </script>
   </body>
 </html>
 

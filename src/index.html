@@ -3,7 +3,7 @@
     <title>Take or Share</title>
     <style>
         body {
-            background-color: black;
+            background-color: white;
         }
         #toolBar {
             text-align: right;
@@ -11,11 +11,12 @@
             width: 100%;
         }
         #menu {
+            border-style: outset;
+            border-color: rgba(0, 0, 0, 0.233);
             padding-left: 10px;
             text-decoration: none;
-            background-color: black;
-            color: white;
-            border: none;
+            background-color: white;
+            color: red;
             font-size: 20px;
             cursor: pointer;
         }
@@ -28,7 +29,8 @@
         }
         #btn {
             background-color: white;
-            border: none;
+            border-style: outset;
+            border-color: rgba(0, 0, 0, 0.233);
             color: red;
             padding: 15px 32px;
             text-align: center;
@@ -39,6 +41,14 @@
         }
         #status {
             color: white; 
+        }
+
+        #choice{
+            color: black;
+        }
+        label{
+            color: red;
+            font-size: larger;
         }
     </style>
 </head>
@@ -51,11 +61,16 @@
             <button id="menu" onclick=window.open("about.html","_self") title="Information about game theory">ABOUT</button>
         </div>
         <div id="main">
-              <center>height="175px" width="400px">
-              <h2>Welcome to the prisoner's dilemma... what is your choice?</h2>
-              <input type="button" id="btn" value="Take" onclick=window.open("take.html","_self")>
-              <input type="button" id="btn" value="Share" onclick=window.open("share.html","_self")>
-              </center>
+              <center height="175px" width="400px">
+              <h2>Welcome to the Game Theory... what is your choice?</h2>
+              <label for="quantity">Number of Eth you want to bet:</label>
+              <input type="number" id="quantity" name="quantity" min="0.1" max="5" step="0.1">
+              <br><br>
+              <label for="choice"> Choices: 0 for "Share" and 1 for "Take" </label>
+              <input type="number" id="choice" name="choice" min="0" max="1" step="1">
+              <br><br>
+              <button type="button" id ="btn" onclick=window.open("reveal.html","_self") > Submit</button>
+              </center>       
       </div>
     </div>
 
@@ -66,6 +81,8 @@
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
+    <script>
+    </script>
   </body>
 </html>
 
